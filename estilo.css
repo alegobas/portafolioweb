@@ -1,0 +1,167 @@
+
+main{
+	width: 80%;
+	font-family: 'Fraunces', serif;
+	margin: auto;
+	/*display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 12px; */
+	overflow: hidden;
+}
+header {
+	font-size: 24px;
+	grid-column: 1/ span 12;
+	height: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 12px; 
+	align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.menup a {
+	color: black;
+	text-decoration: none;
+	background-color: rgba(255, 160, 225, 0);
+	padding: 5px 15px;
+	border-radius: 15px;
+}
+
+.menup a:hover {
+	color: white;
+	background-color: rgb(255, 160, 225);
+}
+
+.menup a:active {
+	color: white;
+	background-color: rgb(255, 160, 225);
+}
+
+
+.icon {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+}
+.icon a {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-color: #eee;
+	border-radius: 25px;
+	margin: 20px;
+	box-shadow: 3px 3px 10px #aeaeae,
+	-4px -4px 10px white;
+	text-align: center;
+	line-height: 90px;
+	font-size: 50px;
+	border:3px solid #eee;
+	color: #333;
+	transition: .3s;
+}
+
+#panelhorizontal{
+	height: auto;
+	width: 200%;
+	background-color: gray;
+	display:grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-template-rows: 1fr 1fr;
+	position: absolute;
+	left: 0%;
+
+}
+
+.p1 {
+	grid-column: 1/5;
+	grid-row: 1/3;
+}
+.p2{
+	grid-column: 5/8;
+	grid-row: 1/2;
+}
+.p3 {
+	grid-column: 8/11;
+	grid-row: 1/2;
+}
+.p4{
+	grid-column: 5/9;
+	grid-row: 2/3;
+}
+.p5{
+	grid-column: 9/11;
+	grid-row: 2/3;
+}
+.p6{
+	grid-column: 11/15;
+	grid-row: 1/3;
+}
+.p7{
+	grid-column: 15/17;
+	grid-row: 1/2;
+}
+.p8{
+	grid-column: 17/21;
+	grid-row: 1/2;
+}
+.p9{
+	grid-column: 15/19;
+	grid-row: 2/3;
+}
+.p10{
+	grid-column: 19/21;
+	grid-row: 2/3;
+}
+
+.p11{
+	grid-column: 21/25;
+	grid-row: 1/3;
+}
+#logo{
+	grid-column: 1/ span 3; 
+	font-weight: 900;
+	color: rgb(255, 160, 225);
+	/*background-color: ;*/ 
+
+}
+
+
+
+header nav {
+	grid-column: 9/ span 4; 
+	font-size: 16px;
+	/*background-color: pink; */
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-between;
+}
+
+	.menup {
+		cursor: pointer;
+		font-weight: 600;
+	}
+	.menup:hover{
+		color: ;
+	}
+	.icon a:hover {
+	animation: border .6s alternate infinite linear;
+	background-color: #ffa0e1;
+	color: #eee;
+}
+@keyframes border {
+	0% {
+		border:3px yellow;
+	}
+	50% {
+		border:3px solid salmon;
+	}
+	100% {
+		border:3px blue;
+	}
+}
+
+   
+}
